@@ -8,7 +8,9 @@
 </head>
 <body>
     <main>
-        <img class="logo" src="img/sorteio-certo.png" alt="">
+        <div class="logo">
+            <h2>Sorteio Certo</h2>
+        </div>
 
         <section>
             <div class="container">
@@ -17,18 +19,21 @@
                 
                 <label for="min">
                     Entre
-                    <input name="min" type="number">
+                    <input name="min" type="number" class="min">
                 </label>
                 <label for="max">
                     E
-                    <input name="max" type="number">
+                    <input name="max" type="number" class="max">
                 </label>
 
-                <h1>Numero<br>Sorteado:<br><span>0</span></h1>
+                <h1>Numero<br>Sorteado:<br><span class="sorteado">0</span></h1>
 
                 <button onclick="pickNumber()">Sortear</button>
             </div>
         </section>
     </main>
 </body>
+
+<script src="script.js"></script>
+
 </html>
