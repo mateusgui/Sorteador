@@ -10,7 +10,11 @@ function pickNumber() {
     min = Math.ceil(document.querySelector('.min').value)
     max = Math.floor(document.querySelector('.max').value)
 
-    let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+    if(max <= min){
+        alert("Escollha um intervalo válido")
+    } else {
+        let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    sorteado.innerHTML = numeroAleatorio
+        sorteado.innerHTML = numeroAleatorio
+    }
 }

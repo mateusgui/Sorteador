@@ -8,7 +8,7 @@
 }
 
 main {
-    background-color: #282A36;
+    background-color: #6272A4;
 
     width: 100vw;
     height: 100vh;
@@ -93,9 +93,10 @@ h1 span {
 
 .logo {
     color: #FFFFFF;
-    background-color: #ff8800;
 
     border-radius: 100px;
+
+    font-size: 32px;
 
     width: calc(15% + 150px);
     height: auto;
